@@ -1,0 +1,22 @@
+.box{
+  padding: 20px;
+  background-color: #ddd;
+  margin: 2px;
+  text-align: center;
+}
+.box.content{ 
+  background-color: red;
+  flex: 1;
+}
+.box.maincontent{
+  flex: 1;
+}
+.content{
+  display: flex;
+  justify-content: space-evenly;
+}
+.icon--apple{
+  font-size: 40px;
+  color: white;
+  margin: 0 10px;
+}

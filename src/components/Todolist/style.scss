@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco+Guides&display=swap');
+.todolist {
+    &__group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #FBEAB6;
+        padding: 20px;
+    }
+    &__p {
+        position: absolute;
+        left: 40px;
+        font-size: 30px;
+        font-family: "Playwrite ES Deco Guides", serif;
+    }
+    &__input {
+        height: 40px;
+        width: 40%;
+        border: 1px #F0A830 solid;
+        border-radius: 8px 0 0 8px;
+        border: 1px 1px 0 1px;
+    }
+    &__input:focus {
+        outline: none;
+    }
+
+    &__button {
+        height: 44px;
+        width: 44px;
+        color: white;
+        background-color: #F0A830;
+        font-weight: lighter;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        border-radius: 0 8px 8px 0;
+        border: #F0A830 1px solid;
+        cursor: pointer;
+    }
+    &__button:hover {
+        background-color: white;
+        color: #F0A830;
+    }
+    &__button:active {
+        background-color: #F0A830;
+        color: white;
+    }
+    &__list {
+        background-color: #f7f2e4;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Tạo khoảng cách giữa các item */
+    }
+    &__list-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            transform: translateY(-5px);
+        }
+        position: relative;
+    }
+    &__list-toDo {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 50.1px; /* Đồng bộ chiều cao */
+        width: 60%;
+        border-radius: 8px 8px 8px 8px;
+        background-color: white;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__list-button3 {
+        position: absolute;
+        border-radius: 45px;
+        background-color: #F0A830;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: #F0A830 1px solid;
+        cursor: pointer;
+        padding: 10px; /* Loại bỏ padding dư thừa */
+        font-size: 25px; /* Tùy chỉnh kích thước font */
+        right: 23vw;
+        margin-right: 5px;
+        &:hover{
+            background-color: white;
+            color: #F0A830;
+        }
+    }
+    &__list-button1 {
+        position: absolute;
+        border-radius: 45px;
+        background-color: #F0A830;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: #F0A830 1px solid;
+        cursor: pointer;
+        padding: 10px; /* Loại bỏ padding dư thừa */
+        font-size: 25px; /* Tùy chỉnh kích thước font */
+        right: 23vw;
+        margin-right: 5px;
+        &:hover{
+            background-color: white;
+            color: #F0A830;
+        }
+    }
+    &__list-button2 {
+        position: absolute;
+        background-color: #F0A830;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 45px;
+        border: #F0A830 1px solid;
+        cursor: pointer;
+        padding: 10px; 
+        font-size: 25px; 
+        right: 19vw;
+        &:hover{
+            background-color: white;
+            color: #F0A830;
+        }
+    }
+}
+li {
+    list-style: none;
+}
